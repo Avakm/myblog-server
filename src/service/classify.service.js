@@ -16,7 +16,7 @@ class classifyService{
 
     async createClassify(classify){
         const { title, content, imageUrl } = classify
-        const statement = `INSERT INTO classify (title, content,imageUrl ) VALUES (?,?,?)`
+        const statement = `INSERT INTO classify (id, name,imageUrl ) VALUES (?,?,?)`
         const [result] = await connection.execute(statement,[title, content,imageUrl ])
         return result
     }
