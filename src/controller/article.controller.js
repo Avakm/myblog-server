@@ -2,6 +2,7 @@ const articleService = require('../service/article.service')
 
 class articleController {
 
+    //获取文章列表
     async getArticleList(ctx,next){
         const result = await articleService.getArticleList()
         ctx.body = result
