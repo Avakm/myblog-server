@@ -8,6 +8,7 @@ class articleController {
         ctx.body = result
     }
 
+    //根据id查看文章信息
     async getArticleById(ctx,next){
         const { id } = ctx.request.params
         const result = await articleService.getArticleById(id*1)
