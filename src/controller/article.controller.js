@@ -15,6 +15,7 @@ class articleController {
         ctx.body = result
     }
 
+    //发表文章
     async createArticle(ctx,next){
         const article= ctx.request.body
         const result = await articleService.createArticle(article)
