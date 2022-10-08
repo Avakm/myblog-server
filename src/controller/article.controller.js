@@ -22,6 +22,7 @@ class articleController {
         ctx.body = result
     }
 
+    //更新文章
     async updateArticle(ctx,next){
         const article = ctx.request.body
         const result = await articleService.updateArticle(article)
