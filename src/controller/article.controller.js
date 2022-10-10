@@ -29,6 +29,7 @@ class articleController {
         ctx.body = result
     }
 
+    //删除文章
     async deleteArticle(ctx,next){
         const { id } = ctx.request.body
         const [result] = await articleService.deleteArticle(id)
