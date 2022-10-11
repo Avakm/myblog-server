@@ -26,6 +26,7 @@ class UserController {
     ctx.body = fs.createReadStream(`${AVATAR_PATH}/${avatarInfo.filename}`);
   }
 
+  //获取用户列表
   async getUserList(ctx,next){
     const { page, size, username } = ctx.query
     console.log(page,size,username)
