@@ -39,6 +39,7 @@ class UserController {
     }
   }
 
+  //更新用户信息
   async updateUserinfo(ctx,next){
     const { username, password, role} = ctx.request.body
     const result = await userService.updateUserinfo( username, password, role)
