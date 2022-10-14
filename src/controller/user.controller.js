@@ -46,6 +46,7 @@ class UserController {
     ctx.body = result
   }
 
+  //删除用户
   async deleteUser(ctx,next){
     const {username} = ctx.request.body
     const result = await userService.deleteUser(username)
