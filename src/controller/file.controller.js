@@ -31,6 +31,7 @@ class FileController {
   }
 
 
+  //保存文件信息
   async saveContentInfo(ctx, next) {
     // console.log(ctx.req.file)
     // 1.获取图像相关的信息
