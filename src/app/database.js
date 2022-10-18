@@ -2,6 +2,7 @@ const mysql = require('mysql2');
 
 const config = require('./config');
 
+//数据库配置
 const connections = mysql.createPool({
   host: config.MYSQL_HOST,
   port: config.MYSQL_PORT,
