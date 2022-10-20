@@ -11,6 +11,7 @@ const connections = mysql.createPool({
   password: config.MYSQL_PASSWORD
 });
 
+//链接数据库
 connections.getConnection((err, conn) => {
   conn.connect((err) => {
     if (err) {
