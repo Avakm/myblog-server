@@ -1,7 +1,7 @@
 const classifyService = require('../service/classify.service')
 
 class classifyController {
-
+    //获取分类列表
     async getClassifyList(ctx,next){
         const result = await classifyService.getClassifyList()
         ctx.body = result
