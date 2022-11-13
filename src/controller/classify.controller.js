@@ -7,6 +7,7 @@ class classifyController {
         ctx.body = result
     }
 
+    //通过id获取分类
     async getClassifyById(ctx,next){
         const { id } = ctx.request.params
         const result = await classifyService.getClassifyById(id*1)
